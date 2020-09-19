@@ -13,4 +13,5 @@ for websitesName in webs:
     print(websitesList)
     for w in websitesList:
         r = web.get(w + user)
+        print(r.headers)
         print(w, " : ", "Found" if str(r) == "<Response [200]>" else "Not Found")
